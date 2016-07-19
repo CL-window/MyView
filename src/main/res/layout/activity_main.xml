@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical"
+    tools:context="com.example.bigview.MainActivity">
+
+
+    <com.example.bigview.MyProgressBar
+        android:id="@+id/progress"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"></com.example.bigview.MyProgressBar>
+
+
+   <com.example.bigview.showCenter
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hello World!" />
+
+    <com.example.bigview.MySeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></com.example.bigview.MySeekBar>
+
+</LinearLayout>
