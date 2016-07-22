@@ -1,26 +1,72 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<ScrollView
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
 
-    android:orientation="vertical"
-    tools:context="com.example.bigview.MainActivity">
-
-
-    <com.example.bigview.MyProgressBar
-        android:id="@+id/progress"
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
-        android:layout_height="20dp"></com.example.bigview.MyProgressBar>
+        android:layout_height="match_parent"
+        android:padding="5dp"
+        android:orientation="vertical"
+        tools:context="com.example.bigview.MainActivity">
 
 
-   <com.example.bigview.showCenter
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        <!-- <com.example.bigview.MyProgressBar
+             android:id="@+id/progress"
+             android:layout_width="match_parent"
+             android:layout_height="20dp"></com.example.bigview.MyProgressBar>
 
-    <com.example.bigview.MySeekBar
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"></com.example.bigview.MySeekBar>
 
-</LinearLayout>
+        <com.example.bigview.showCenter
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:text="Hello World!" />
+
+         <com.example.bigview.MySeekBar
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"></com.example.bigview.MySeekBar>-->
+
+       <!-- <com.example.bigview.GifView
+            android:id="@+id/gif1"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center_horizontal"
+            android:enabled="false" />
+
+        <com.example.bigview.GifView
+            android:id="@+id/gif2"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center_horizontal"
+            android:enabled="false" />-->
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="start"
+            android:onClick="start"
+            />
+        <com.example.bigview.GifView
+            android:id="@+id/gif3"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center_horizontal"
+            android:enabled="false" />
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@+id/main_start_btn"
+            >
+            <TextView
+                android:id="@+id/main_log_tv"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+        </ScrollView>
+
+
+    </LinearLayout>
+
+
+</ScrollView>

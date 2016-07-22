@@ -10,6 +10,12 @@ android {
         targetSdkVersion 24
         versionCode 1
         versionName "1.0"
+
+        ndk {
+            moduleName "gif"
+            ldLibs "log"//实现__android_log_print
+            abiFilters "armeabi", "armeabi-v7a", "x86"
+        }
     }
     buildTypes {
         release {
@@ -17,6 +23,9 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+
+
+
 }
 
 dependencies {
